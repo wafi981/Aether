@@ -1,0 +1,1140 @@
+apiVersion: v1
+entries:
+  5g-control-plane:
+  - apiVersion: v2
+    created: "2023-03-30T15:38:55.046682599+05:30"
+    dependencies:
+    - condition: mongodb.deploy
+      name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.6.4
+    - condition: kafka.deploy
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.0.4
+    description: SD-Core 5G control plane services
+    digest: 891255044b8cbb06d7bcad4a27ce207ab8d9319e06da691f7fa476bbc5431621
+    icon: https://guide.opencord.org/logos/cord.svg
+    name: 5g-control-plane
+    urls:
+    - docs/5g-control-plane-0.8.13.tgz
+    version: 0.8.13
+  5g-ran-sim:
+  - apiVersion: v1
+    created: "2023-03-30T15:38:55.047413883+05:30"
+    description: 5G RAN Simulator Service
+    digest: 9a1907ae7c47b804e3a2ebfcf08d6a91a108525e915385e0b5373ea067352751
+    icon: https://guide.opencord.org/logos/cord.svg
+    name: 5g-ran-sim
+    urls:
+    - docs/5g-ran-sim-0.6.5.tgz
+    version: 0.6.5
+  5g-test-apps:
+  - apiVersion: v2
+    created: "2023-03-30T15:38:55.051515304+05:30"
+    dependencies:
+    - condition: mongodb.deploy
+      name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.6.4
+    description: This is the dbtestapp
+    digest: ef656537e5d3bcce8f1a34d9bd91c90c53beacb6fb3264701b50df19fb001333
+    icon: https://guide.opencord.org/logos/cord.svg
+    name: 5g-test-apps
+    urls:
+    - docs/5g-test-apps-0.2.3.tgz
+    version: 0.2.3
+  aether-enterprise-portal:
+  - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2023-03-30T15:38:55.05321844+05:30"
+    description: Aether Enterprise Portal
+    digest: 1ba2fa254c68853172d488811e496f683eda3952bbdf438ebe4cd6faac400262
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - roc
+    - enterprise
+    - portal
+    kubeVersion: '>=1.15.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: aether-enterprise-portal
+    type: application
+    urls:
+    - docs/aether-enterprise-portal-0.1.2.tgz
+    version: 0.1.2
+  aether-mock-exporter:
+  - apiVersion: v2
+    appVersion: v0.0.0
+    created: "2023-03-30T15:38:55.053566008+05:30"
+    description: Aether ROC Mock Exporter
+    digest: a86aabea3aab9e9c6405ecd6338e0b141de22b2b5861a71eded726a487786e3e
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - exporter
+    kubeVersion: '>=1.15.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: aether-mock-exporter
+    type: application
+    urls:
+    - docs/aether-mock-exporter-0.2.1.tgz
+    version: 0.2.1
+  aether-roc-api:
+  - apiVersion: v2
+    appVersion: v0.10.26
+    created: "2023-03-30T15:38:55.053988789+05:30"
+    description: Aether ROC API
+    digest: 3c4b5b96ebec7600ed386c4a0d8652ca62219e8cdede13a349c4828035495490
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - config
+    - roc
+    - openapi3
+    - gnmi
+    kubeVersion: '>=1.15.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: aether-roc-api
+    type: application
+    urls:
+    - docs/aether-roc-api-1.7.14.tgz
+    version: 1.7.14
+  aether-roc-gui:
+  - apiVersion: v2
+    appVersion: 3.0.0
+    created: "2023-03-30T15:38:55.054436912+05:30"
+    description: Aether ROC Graphical User Interface
+    digest: 6ea4d2136863a34c26046d2e639609d4be7f449c2eaead87de986d79c1a79182
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - config
+    kubeVersion: '>=1.15.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: aether-roc-gui
+    type: application
+    urls:
+    - docs/aether-roc-gui-3.0.152.tgz
+    version: 3.0.152
+  aether-roc-gui-v2:
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: "2023-03-30T15:38:55.054906481+05:30"
+    description: Aether ROC Graphical User Interface
+    digest: 788479041f5971a4f0dff1f4977f2f74390c0868968d3db85bd82ff36306b313
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - roc
+    - gui
+    kubeVersion: '>=1.15.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: aether-roc-gui-v2
+    type: application
+    urls:
+    - docs/aether-roc-gui-v2-2.1.3.tgz
+    version: 2.1.3
+  aether-roc-gui-v4:
+  - apiVersion: v2
+    appVersion: 4.0.0
+    created: "2023-03-30T15:38:55.055359142+05:30"
+    description: Aether ROC Graphical User Interface
+    digest: a6d938b68a1df5048ef63cf1a1a259d1a870e9cd8a39cd1a8ce87a4c09b94ece
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - roc
+    - gui
+    kubeVersion: '>=1.15.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: aether-roc-gui-v4
+    type: application
+    urls:
+    - docs/aether-roc-gui-v4-4.0.100.tgz
+    version: 4.0.100
+  aether-roc-umbrella:
+  - apiVersion: v2
+    appVersion: v0.0.0
+    created: "2023-03-30T15:38:55.06953484+05:30"
+    dependencies:
+    - condition: import.onos-topo.enabled
+      name: onos-topo
+      repository: https://charts.onosproject.org
+      version: 1.4.5
+    - condition: import.onos-config.enabled
+      name: onos-config
+      repository: https://charts.onosproject.org
+      version: 1.8.5
+    - condition: import.onos-cli.enabled
+      name: onos-cli
+      repository: https://charts.onosproject.org
+      version: 1.3.13
+    - condition: import.aether-roc-api.enabled
+      name: aether-roc-api
+      repository: file://../aether-roc-api
+      version: 1.7.14
+    - condition: import.aether-roc-gui.v2-0.enabled
+      name: aether-roc-gui-v2
+      repository: https://charts.aetherproject.org
+      version: 2.1.3
+    - alias: aether-roc-gui-v2-1
+      condition: import.aether-roc-gui.v2-1.enabled
+      name: aether-roc-gui
+      repository: file://../aether-roc-gui
+      version: 2.1.20
+    - alias: sdcore-adapter-v2-0
+      condition: import.sdcore-adapter.v2-0.enabled
+      name: sdcore-adapter-v2
+      repository: https://charts.aetherproject.org
+      version: 2.1.1
+    - alias: sdcore-prom-kafka
+      condition: import.sdcore-prom-kafka.enabled
+      name: sdcore-prom-kafka
+      repository: file://../sdcore-prom-kafka
+      version: 1.0.0
+    - alias: sdcore-adapter-v2-1
+      condition: import.sdcore-adapter.v2-1.enabled
+      name: sdcore-adapter
+      repository: file://../sdcore-adapter
+      version: 2.1.4
+    - condition: import.subscriber-proxy.enabled
+      name: subscriber-proxy
+      repository: file://../subscriber-proxy
+      version: 0.2.1
+    - alias: sdcore-test-dummy
+      condition: import.sdcore-test-dummy.enabled
+      name: nginx
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.2.0
+    - condition: import.grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.49.0
+    - alias: prometheus-amp
+      condition: import.prometheus.amp.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 19.3.0
+    - alias: prometheus-acc
+      condition: import.prometheus.acc.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 19.3.0
+    - alias: prometheus-ace
+      condition: import.prometheus.ace.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 19.3.0
+    - alias: prom-label-proxy-amp
+      condition: import.prom-label-proxy.amp.enabled
+      name: prom-label-proxy
+      repository: file://../prom-label-proxy
+      version: 0.1.3
+    - alias: prom-label-proxy-acc
+      condition: import.prom-label-proxy.acc.enabled
+      name: prom-label-proxy
+      repository: file://../prom-label-proxy
+      version: 0.1.3
+    - condition: import.aether-mock-exporter.enabled
+      name: aether-mock-exporter
+      repository: file://../aether-mock-exporter
+      version: 0.2.1
+    description: Aether ROC Umbrella chart to deploy all Aether ROC
+    digest: 9abf33ff6775e152c646238857268eb83d73a9ace77cc04892e9b1487e66fc40
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - sdn
+    kubeVersion: '>=1.18.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: aether-roc-umbrella
+    type: application
+    urls:
+    - docs/aether-roc-umbrella-2.1.35.tgz
+    version: 2.1.35
+  aether-roc-websocket:
+  - apiVersion: v2
+    appVersion: v0.8.7
+    created: "2023-03-30T15:38:55.069850694+05:30"
+    description: Aether ROC Websocket
+    digest: 7c3e2eeced9131f57afcafa22f9a3cabef8a1e58ad9ba8162842f1ce2c8a8b86
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - alerts
+    - roc
+    - openapi3
+    - websocket
+    kubeVersion: '>=1.15.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: aether-roc-websocket
+    type: application
+    urls:
+    - docs/aether-roc-websocket-1.2.0.tgz
+    version: 1.2.0
+  bess-upf:
+  - apiVersion: v1
+    created: "2023-03-30T15:38:55.071097767+05:30"
+    description: OMEC user plane based on BESS
+    digest: da888a34e0ffb60080d06d4cc06b5824c858e389009cbcee31854b6838a67da8
+    icon: https://guide.opencord.org/logos/cord.svg
+    name: bess-upf
+    urls:
+    - docs/bess-upf-0.1.3.tgz
+    version: 0.1.3
+  cdn-local:
+  - apiVersion: v1
+    created: "2023-03-30T15:38:55.071564806+05:30"
+    description: A Helm chart for M-CORD CDN Services in Local Edge
+    digest: a56c1f54955cd731ec7c0d7ba50e5bf3eabdef1e647c9b7f831a3d899698bf33
+    icon: https://guide.opencord.org/logos/cord.svg
+    name: cdn-local
+    urls:
+    - docs/cdn-local-0.2.7.tgz
+    version: 0.2.7
+  cdn-remote:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2023-03-30T15:38:55.071831116+05:30"
+    description: A Helm chart for M-CORD CDN Services in Remote Edge
+    digest: 6f3deef4e084a2f3ac025277d7916575b6ccfc4d898a548d75c8fda2e646aec8
+    name: cdn-remote
+    urls:
+    - docs/cdn-remote-0.2.6.tgz
+    version: 0.2.6
+  chronos-exporter:
+  - apiVersion: v2
+    appVersion: v0.1.7
+    created: "2023-03-30T15:38:55.073671395+05:30"
+    description: Chronos Exporter
+    digest: dfabfb77d2d52ee8b9343b388b42f0d97b14313977295aa67757857248530321
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - exporter
+    kubeVersion: '>=1.15.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: chronos-exporter
+    type: application
+    urls:
+    - docs/chronos-exporter-0.1.0.tgz
+    version: 0.1.0
+  chronos-umbrella:
+  - apiVersion: v2
+    appVersion: v0.0.0
+    created: "2023-03-30T15:38:55.096026288+05:30"
+    dependencies:
+    - condition: import.grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.16.6
+    - alias: prometheus-chronos
+      condition: import.prometheus.chronos.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 14.6.1
+    - condition: import.chronos-exporter.enabled
+      name: chronos-exporter
+      repository: file://../chronos-exporter
+      version: 0.1.0
+    - condition: import.aether-enterprise-portal.enabled
+      name: aether-enterprise-portal
+      repository: file://../aether-enterprise-portal
+      version: 0.1.2
+    - condition: import.rasa.enabled
+      name: rasa-model-server
+      repository: file://../rasa-model-server
+      version: 0.1.0
+    - condition: import.rasa.enabled
+      name: rasa-action-server
+      repository: file://../rasa-action-server
+      version: 0.1.0
+    - condition: import.rasa.enabled
+      name: rasa
+      repository: https://helm.rasa.com
+      version: 1.16.0
+    - condition: import.rasa.enabled
+      name: mailhog
+      repository: https://codecentric.github.io/helm-charts
+      version: 5.0.5
+    description: Chronos Umbrella chart to deploy all Aether ROC
+    digest: e6822476123eb8bcf2ffa5592ed4fe44355d486379043b75d4b1d78f5de484cc
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - exporter
+    kubeVersion: '>=1.18.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: chronos-umbrella
+    type: application
+    urls:
+    - docs/chronos-umbrella-0.1.32.tgz
+    version: 0.1.32
+  config-model-aether:
+  - apiVersion: v2
+    appVersion: 4.0.0
+    created: "2023-03-30T15:38:55.097997699+05:30"
+    description: Aether config model
+    digest: e5777c67b983a8221f2e11909ab1b0fdb9a4d5795a451aa5feab7d38855e9737
+    home: https://onosproject.org
+    keywords:
+    - onos
+    - sdn
+    - config
+    kubeVersion: '>=1.18.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: ONOS Support
+    name: config-model-aether
+    urls:
+    - docs/config-model-aether-4.0.4.tgz
+    version: 4.0.4
+  config-model-aether-2:
+  - apiVersion: v2
+    appVersion: 2.1.0
+    created: "2023-03-30T15:38:55.096512802+05:30"
+    description: Aether config model
+    digest: a8c60aff75300f57b6214672cc1ca5ab6b37bf6080a16b942561b5225d42c63f
+    home: https://onosproject.org
+    keywords:
+    - onos
+    - sdn
+    - config
+    kubeVersion: '>=1.18.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: ONOS Support
+    name: config-model-aether-2
+    urls:
+    - docs/config-model-aether-2-2.1.6.tgz
+    version: 2.1.6
+  config-model-aether-3:
+  - apiVersion: v2
+    appVersion: 3.0.0
+    created: "2023-03-30T15:38:55.096986796+05:30"
+    description: Aether config model
+    digest: 37141ea9702b027156f0f00f843d14d833c01d0ebc2b695eb9432108def39610
+    home: https://onosproject.org
+    keywords:
+    - onos
+    - sdn
+    - config
+    kubeVersion: '>=1.18.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: ONOS Support
+    name: config-model-aether-3
+    urls:
+    - docs/config-model-aether-3-3.0.150.tgz
+    version: 3.0.150
+  config-model-aether-4:
+  - apiVersion: v2
+    appVersion: 4.0.0
+    created: "2023-03-30T15:38:55.097510498+05:30"
+    description: Aether config model
+    digest: 8ecb9a9f2fcdb06daf4c45068858491e14c14f38b936847a6c1b0c35079af43e
+    home: https://onosproject.org
+    keywords:
+    - onos
+    - sdn
+    - config
+    kubeVersion: '>=1.18.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: ONOS Support
+    name: config-model-aether-4
+    urls:
+    - docs/config-model-aether-4-4.0.18.tgz
+    version: 4.0.18
+  config-model-plproxy:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-03-30T15:38:55.098122617+05:30"
+    description: Prom label proxy config model
+    digest: 7314ab9d2ddf2c4fb5f2bef418cacdff35183909547ac0669504abc1c1682b74
+    home: https://onosproject.org
+    keywords:
+    - plproxy
+    - config
+    kubeVersion: '>=1.18.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: ONOS Support
+    name: config-model-plproxy
+    urls:
+    - docs/config-model-plproxy-1.0.2.tgz
+    version: 1.0.2
+  dbuf:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-03-30T15:38:55.098393746+05:30"
+    description: A Helm chart deploying DBUF
+    digest: 5180f938a8f40e02d606e15e311cf0f8e15138b616d134787d7bbee9e8114830
+    name: dbuf
+    type: application
+    urls:
+    - docs/dbuf-0.1.11.tgz
+    version: 0.1.11
+  demo-exporter:
+  - apiVersion: v2
+    appVersion: v0.0.0
+    created: "2023-03-30T15:38:55.098632156+05:30"
+    description: Aether ROC Demo Exporter
+    digest: c3ad43356401d6f4f330469a8fa83d394bdf336c0064ab644842dd2099e42577
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - exporter
+    kubeVersion: '>=1.15.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: demo-exporter
+    type: application
+    urls:
+    - docs/demo-exporter-0.1.1.tgz
+    version: 0.1.1
+  di-metrics-exporter:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2023-03-30T15:38:55.09873679+05:30"
+    description: A Helm chart for host status reporter
+    digest: c900dfae528ec799a42d8a2d76df6983c08417f5b7fbb63ee6ea77f3bfe7506c
+    name: di-metrics-exporter
+    urls:
+    - docs/di-metrics-exporter-0.0.3.tgz
+    version: 0.0.3
+  di-topology-watchdog:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2023-03-30T15:38:55.098858167+05:30"
+    description: A Helm chart for Deep Insight topology watchdog
+    digest: 2ba59e429027e6f7b39d8b68542073ce411dd9e4847be4e4725efde4a49b7d55
+    name: di-topology-watchdog
+    urls:
+    - docs/di-topology-watchdog-0.0.5.tgz
+    version: 0.0.5
+  edge-maintenance-agent:
+  - apiVersion: v1
+    appVersion: 0.7.20
+    created: "2023-03-30T15:38:55.099084958+05:30"
+    description: A Helm chart for deploying Aether's edge maintenance agent
+    digest: a3e48effe0646555b2667c4023af8f1a0054488db9336c1ec4e22968f235a9ea
+    name: edge-maintenance-agent
+    urls:
+    - docs/edge-maintenance-agent-0.2.0.tgz
+    version: 0.2.0
+  edge-monitoring-server:
+  - apiVersion: v1
+    appVersion: 0.7.6
+    created: "2023-03-30T15:38:55.099334752+05:30"
+    description: A Helm chart for deploying Aether's edge monitoring server
+    digest: 1cb4676254f524090e65d728b33145dff9f1a934533600018dacdff4a27947fd
+    name: edge-monitoring-server
+    urls:
+    - docs/edge-monitoring-server-0.5.5.tgz
+    version: 0.5.5
+  enodebd:
+  - apiVersion: v2
+    appVersion: 0.0.2
+    created: "2023-03-30T15:38:55.099615065+05:30"
+    description: Aether Enodebd Service
+    digest: 3513e9a97c495cdacc3ab459c2e906b39357005ca33c51dace2abdc866f1bb6e
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - enodebd
+    kubeVersion: '>=1.15.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: enodebd
+    type: application
+    urls:
+    - docs/enodebd-0.0.2.tgz
+    version: 0.0.2
+  fabric-adapter:
+  - apiVersion: v2
+    appVersion: v0.0.5
+    created: "2023-03-30T15:38:55.100808668+05:30"
+    description: Aether Fabric Adapter
+    digest: 505df5ad08f52e624562dc891f9b63766155b817950f0ac97c5682a88014af44
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - fabric
+    - adapter
+    kubeVersion: '>=1.17.0'
+    maintainers:
+    - email: scott.baker@intel.com
+      name: Intel
+    name: fabric-adapter
+    type: application
+    urls:
+    - docs/fabric-adapter-0.1.3.tgz
+    version: 0.1.3
+  fabric-umbrella:
+  - apiVersion: v2
+    appVersion: v0.0.0
+    created: "2023-03-30T15:38:55.109366895+05:30"
+    dependencies:
+    - condition: import.onos-topo.enabled
+      name: onos-topo
+      repository: https://charts.onosproject.org
+      version: 1.3.5
+    - condition: import.onos-config.enabled
+      name: onos-config
+      repository: https://charts.onosproject.org
+      version: 1.7.9
+    - condition: import.onos-cli.enabled
+      name: onos-cli
+      repository: https://charts.onosproject.org
+      version: 1.3.2
+    - alias: fabric-roc-api
+      condition: import.fabric-roc-api.enabled
+      name: aether-roc-api
+      repository: file://../aether-roc-api
+      version: 1.7.13
+    - alias: fabric-roc-gui
+      condition: import.fabric-roc-gui.v0-1.enabled
+      name: aether-roc-gui
+      repository: file://../aether-roc-gui
+      version: 2.1.18
+    - alias: fabric-test-dummy
+      condition: import.fabric-test-dummy.enabled
+      name: nginx
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.0.0
+    - alias: prometheus-fabric
+      condition: import.prometheus.false.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 14.6.1
+    - alias: prom-label-proxy-fabric
+      condition: import.prom-label-proxy.fabric.enabled
+      name: prom-label-proxy
+      repository: file://../prom-label-proxy
+      version: 0.1.2
+    - alias: fabric-mock-exporter
+      condition: import.fabric-mock-exporter.enabled
+      name: aether-mock-exporter
+      repository: file://../aether-mock-exporter
+      version: 0.2.1
+    description: Fabric ROC Umbrella chart to deploy all Fabric ROC
+    digest: d0a115d3141ec4ec45f53eae013a250afa16dff8560ada540bb9d5c81a497038
+    home: https://opennetworking.org/sd-fabric/
+    keywords:
+    - aether
+    - sdn
+    kubeVersion: '>=1.18.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Fabric Ops team
+    name: fabric-umbrella
+    type: application
+    urls:
+    - docs/fabric-umbrella-0.1.17.tgz
+    version: 0.1.17
+  grafana-aether:
+  - apiVersion: v1
+    appVersion: 0.1.0
+    created: "2023-03-30T15:38:55.114451741+05:30"
+    dependencies:
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://charts.helm.sh/stable
+      version: 5.5.0
+    description: A Helm chart for deploying Grafana with Aether dashboards
+    digest: 73a905a6396150b10b90e7940ec26791c8c575c500d540549b3057ca7e91d114
+    name: grafana-aether
+    urls:
+    - docs/grafana-aether-0.6.15.tgz
+    version: 0.6.15
+  infosys-deepstream:
+  - apiVersion: v1
+    created: "2023-03-30T15:38:55.114673712+05:30"
+    description: Infosys deepstream application for Aether
+    digest: 93216b72fe5b20ac5b726b5bf974f6eeeed0fdae1c7171b78d84ed348128cdc6
+    name: infosys-deepstream
+    urls:
+    - docs/infosys-deepstream-0.1.0.tgz
+    version: 0.1.0
+  int-host-reporter:
+  - apiVersion: v2
+    created: "2023-03-30T15:38:55.114818307+05:30"
+    description: Host-INT
+    digest: 50c2d9611dc0ff97e4488c0201eddd27835f6bb79fd93a59559a933f6b2d695c
+    keywords:
+    - In-band Network Telemetry
+    - SDN
+    - eBPF
+    name: int-host-reporter
+    type: application
+    urls:
+    - docs/int-host-reporter-0.0.4.tgz
+    version: 0.0.4
+  network-diag-app:
+  - apiVersion: v2
+    appVersion: 0.0.4-dev
+    created: "2023-03-30T15:38:55.114919493+05:30"
+    digest: 2f0f026da52ddd8d0edfa7e59a33f57f29f2acca5fa716240c92869d3d5ba506
+    name: network-diag-app
+    urls:
+    - docs/network-diag-app-0.1.0.tgz
+    version: 0.1.0
+  omec-control-plane:
+  - apiVersion: v1
+    created: "2023-03-30T15:38:55.116943404+05:30"
+    dependencies:
+    - condition: cassandra.deploy
+      name: cassandra
+      repository: https://charts.helm.sh/incubator
+      version: 0.13.1
+    description: OMEC control plane services
+    digest: cfdba1f1efc96885367da80c46274dae2dbc1b33afe3263441926998734c0219
+    icon: https://guide.opencord.org/logos/cord.svg
+    name: omec-control-plane
+    urls:
+    - docs/omec-control-plane-0.12.0.tgz
+    version: 0.12.0
+  omec-data-plane:
+  - apiVersion: v1
+    created: "2023-03-30T15:38:55.117230371+05:30"
+    description: OMEC data plane services
+    digest: 6bb98ad0fbcf34c6e931700c28488d26c8bff9e4b4b3d0d2fb15f98cd52eae3d
+    icon: https://guide.opencord.org/logos/cord.svg
+    name: omec-data-plane
+    urls:
+    - docs/omec-data-plane-0.1.14.tgz
+    version: 0.1.14
+  omec-data-plane-cni:
+  - apiVersion: v1
+    created: "2023-03-30T15:38:55.117371697+05:30"
+    description: CNI setup for OMEC data plane
+    digest: a5eabe90d35f31de17fba396e972ce1e46a2b0332b4db2ce0d66caed82b242ed
+    icon: https://guide.opencord.org/logos/cord.svg
+    name: omec-data-plane-cni
+    urls:
+    - docs/omec-data-plane-cni-1.0.3.tgz
+    version: 1.0.3
+  omec-pfcp-agent:
+  - apiVersion: v1
+    created: "2023-03-30T15:38:55.117655021+05:30"
+    description: OMEC pfcp agent services
+    digest: a6d1352acefc9c21a0c0ebf4623538087d339804b632121fea7501c47caf241e
+    icon: https://guide.opencord.org/logos/cord.svg
+    name: omec-pfcp-agent
+    urls:
+    - docs/omec-pfcp-agent-0.1.0.tgz
+    version: 0.1.0
+  omec-sub-provision:
+  - apiVersion: v2
+    created: "2023-03-30T15:38:55.118008196+05:30"
+    description: Mobile Sim Provisioning services
+    digest: cc8e954f946f4f9137d932812746e659fdbb651b04ab68b528d601ee2ac66ebe
+    icon: https://guide.opencord.org/logos/cord.svg
+    name: omec-sub-provision
+    urls:
+    - docs/omec-sub-provision-0.6.0.tgz
+    version: 0.6.0
+  omec-upf-cni:
+  - apiVersion: v1
+    created: "2023-03-30T15:38:55.118153758+05:30"
+    description: CNI setup for OMEC data plane
+    digest: 549e3a722c431a82d758d7fbaff7281660965fc19971ca66573e47ae90e58f07
+    icon: https://guide.opencord.org/logos/cord.svg
+    name: omec-upf-cni
+    urls:
+    - docs/omec-upf-cni-0.1.4.tgz
+    version: 0.1.4
+  omec-upf-pfcp-agent:
+  - apiVersion: v1
+    created: "2023-03-30T15:38:55.118324237+05:30"
+    description: OMEC pfcp agent based on BESS
+    digest: a86a3f4b94cfbdd01ba8d5dbb3c683e9bb3741cf52da89cdedf7ef0005e6607e
+    icon: https://guide.opencord.org/logos/cord.svg
+    name: omec-upf-pfcp-agent
+    urls:
+    - docs/omec-upf-pfcp-agent-0.3.0.tgz
+    version: 0.3.0
+  omec-user-plane:
+  - apiVersion: v1
+    created: "2023-03-30T15:38:55.1189067+05:30"
+    description: OMEC user plane based on BESS
+    digest: e412897c730476e21c7251e940daf7cc251573774e5c24fd1b06f6d0ecdc234e
+    icon: https://guide.opencord.org/logos/cord.svg
+    name: omec-user-plane
+    urls:
+    - docs/omec-user-plane-0.7.0.tgz
+    version: 0.7.0
+  opendistro-setting:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-03-30T15:38:55.11924091+05:30"
+    description: A Helm chart deploying container to config opensearch services
+    digest: 1faf7b186d344869c92defb6775021d328c9393cf00dbdd759f5a7c7ccff10e5
+    name: opendistro-setting
+    type: application
+    urls:
+    - docs/opendistro-setting-0.1.4.tgz
+    version: 0.1.4
+  opensearch-setting:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-03-30T15:38:55.119627249+05:30"
+    description: A Helm chart deploying container to config opensearch services
+    digest: 3b94cf780507bf9a2f734b4ef5bf52a490a1ceaa302d8e0fd0cb49c0de6d6dc2
+    name: opensearch-setting
+    type: application
+    urls:
+    - docs/opensearch-setting-0.1.6.tgz
+    version: 0.1.6
+  person-detection-app:
+  - apiVersion: v2
+    appVersion: master
+    created: "2023-03-30T15:38:55.119905877+05:30"
+    description: A Helm chart for deploying Aether's person-detection-app
+    digest: 76b0e70061bf18f0316f66a18203a9f4feaba20b6bf9701877302be29e22c384
+    name: person-detection-app
+    type: application
+    urls:
+    - docs/person-detection-app-0.1.5.tgz
+    version: 0.1.5
+  pfcp-agent:
+  - apiVersion: v1
+    created: "2023-03-30T15:38:55.12015572+05:30"
+    description: PFCP Agent for SD-Fabric's P4 UPF
+    digest: 83e63e52e7ea9b8c0b6d75b6517298b75bf0434bcb08e1f8b64e2289513c2b71
+    name: pfcp-agent
+    urls:
+    - docs/pfcp-agent-0.0.14.tgz
+    version: 0.0.14
+  prom-label-proxy:
+  - apiVersion: v2
+    appVersion: v0.3.6
+    created: "2023-03-30T15:38:55.120474158+05:30"
+    description: Prom Label Proxy
+    digest: ce9b35eb4f877bc29a3b2bacbc060cf3e48137bb6cff9d47011356683bb9442d
+    home: https://onosproject.org
+    keywords:
+    - onos
+    kubeVersion: '>=1.17.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: ONOS Support
+    name: prom-label-proxy
+    type: application
+    urls:
+    - docs/prom-label-proxy-0.1.3.tgz
+    version: 0.1.3
+  rasa-action-server:
+  - apiVersion: v2
+    appVersion: v0.1.7
+    created: "2023-03-30T15:38:55.120721788+05:30"
+    description: Rasa Model Server
+    digest: 0e94194d663743adea1317944b8c77caf32347c088aaab254ae6399e95367082
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - exporter
+    kubeVersion: '>=1.15.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: rasa-action-server
+    type: application
+    urls:
+    - docs/rasa-action-server-0.1.0.tgz
+    version: 0.1.0
+  rasa-model-server:
+  - apiVersion: v2
+    appVersion: v0.1.7
+    created: "2023-03-30T15:38:55.120980369+05:30"
+    description: Rasa Model Server
+    digest: 8e5d4943e2be43b5b5997ecc011b8928c91e15253cf493490f1f04587b770e9a
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - exporter
+    kubeVersion: '>=1.15.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: rasa-model-server
+    type: application
+    urls:
+    - docs/rasa-model-server-0.1.0.tgz
+    version: 0.1.0
+  ros-core:
+  - apiVersion: v1
+    created: "2023-03-30T15:38:55.122180866+05:30"
+    dependencies:
+    - condition: coredns.deploy
+      name: coredns
+      repository: https://charts.helm.sh/stable
+      version: 1.13.4
+    description: ROS-Core chart for Drone use-case
+    digest: 255bbd716ea322a2f8209e9d1bbadfde0ff87b190ebb2cf8a1a3d04e883e6322
+    icon: https://www.ros.org/wp-content/uploads/2013/10/rosorg-logo1.png
+    name: ros-core
+    urls:
+    - docs/ros-core-0.1.4.tgz
+    version: 0.1.4
+  router:
+  - apiVersion: v2
+    created: "2023-03-30T15:38:55.122352856+05:30"
+    description: Route Data plane packets from Gnb to UPF to Internet and vice versa
+    digest: 8f81439de09a87e91eebca5f1722479d07da9901c35ccb2c2bb4c4680c86f8a3
+    icon: https://guide.opencord.org/logos/cord.svg
+    name: router
+    urls:
+    - docs/router-0.1.1.tgz
+    version: 0.1.1
+  sd-core:
+  - apiVersion: v2
+    created: "2023-03-30T15:38:55.142310525+05:30"
+    dependencies:
+    - condition: omec-control-plane.enable4G
+      name: omec-control-plane
+      repository: https://charts.aetherproject.org
+      version: 0.12.0
+    - condition: omec-sub-provision.enable
+      name: omec-sub-provision
+      repository: https://charts.aetherproject.org
+      version: 0.6.0
+    - condition: 5g-control-plane.enable5G
+      name: 5g-control-plane
+      repository: https://charts.aetherproject.org
+      version: 0.8.12
+    - alias: omec-user-plane
+      condition: omec-user-plane.enable
+      name: bess-upf
+      repository: https://charts.aetherproject.org
+      version: 0.1.0
+    - condition: 5g-ran-sim.enable
+      name: 5g-ran-sim
+      repository: https://charts.aetherproject.org
+      version: 0.6.5
+    description: SD-Core control plane services
+    digest: d1446aec002286b7bbaa612eb1751ed3fbc36ba72b70b8456686876e0a292b2b
+    home: https://opennetworking.org/sd-core/
+    icon: https://guide.opencord.org/logos/cord.svg
+    maintainers:
+    - email: support@opennetworking.org
+      name: SD-Core Support
+    name: sd-core
+    type: application
+    urls:
+    - docs/sd-core-0.12.6.tgz
+    version: 0.12.6
+  sdcore-adapter:
+  - apiVersion: v2
+    appVersion: v3.0.0
+    created: "2023-03-30T15:38:55.142795246+05:30"
+    description: ONOS SD-Core Adapter
+    digest: 7269e87132d8fef9487b58cfc3ed84faf4cb26952e5d8d940e8397cbfa3f479e
+    home: https://onosproject.org
+    keywords:
+    - onos
+    - sdn
+    kubeVersion: '>=1.17.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: ONOS Support
+    name: sdcore-adapter
+    type: application
+    urls:
+    - docs/sdcore-adapter-3.0.16.tgz
+    version: 3.0.16
+  sdcore-adapter-v2:
+  - apiVersion: v2
+    appVersion: v2.0.0
+    created: "2023-03-30T15:38:55.143586274+05:30"
+    description: Aether SD-Core Adapter
+    digest: 893d1245c7bf9bdae574d2d8e4692da2d3915ce39c501ec8c97671d2552e0a6d
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - sdcore
+    - adapter
+    kubeVersion: '>=1.17.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: sdcore-adapter-v2
+    type: application
+    urls:
+    - docs/sdcore-adapter-v2-2.1.1.tgz
+    version: 2.1.1
+  sdcore-adapter-v2-1:
+  - apiVersion: v2
+    appVersion: v2.1.0
+    created: "2023-03-30T15:38:55.143208599+05:30"
+    description: Aether SD-Core Adapter
+    digest: 1b087bf6221f42f7b9e64bc6fbeca064fbe99dd83f9fc3a7ba41174a1e4c356b
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - sdcore
+    - adapter
+    kubeVersion: '>=1.17.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: sdcore-adapter-v2-1
+    type: application
+    urls:
+    - docs/sdcore-adapter-v2-1-2.1.1.tgz
+    version: 2.1.1
+  sdcore-adapter-v4:
+  - apiVersion: v2
+    appVersion: v4.0.0
+    created: "2023-03-30T15:38:55.143924652+05:30"
+    description: Aether SD-Core Adapter
+    digest: 9ebc7e1554cf33a78d6c78a06594712c7878cdc14ebeb5d2099339101d38140f
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    - sdcore
+    - adapter
+    kubeVersion: '>=1.17.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: sdcore-adapter-v4
+    type: application
+    urls:
+    - docs/sdcore-adapter-v4-4.0.19.tgz
+    version: 4.0.19
+  sdcore-prom-kafka:
+  - apiVersion: v2
+    appVersion: v2.1.0
+    created: "2023-03-30T15:38:55.14414805+05:30"
+    description: Poll Prometheus for core changes and push to Kafka
+    digest: 155dc09a00a3a77ccd2d5404d4458898b5eafd9880279d946789c4d4fd9c9e18
+    home: https://www.opennetworking.org/aether/
+    keywords:
+    - aether
+    kubeVersion: '>=1.17.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: sdcore-prom-kafka
+    type: application
+    urls:
+    - docs/sdcore-prom-kafka-1.0.0.tgz
+    version: 1.0.0
+  sdfabric:
+  - apiVersion: v2
+    created: "2023-03-30T15:38:55.146462722+05:30"
+    dependencies:
+    - condition: import.onos-classic.enabled
+      name: onos-classic
+      repository: https://charts.onosproject.org
+      version: 0.1.28
+    - condition: import.stratum.enabled
+      name: stratum
+      repository: https://charts.stratumproject.org/
+      version: 0.1.18
+    - condition: import.pfcp-agent.enabled
+      name: pfcp-agent
+      repository: file://../pfcp-agent
+      version: 0.0.14
+    - condition: import.dbuf.enabled
+      name: dbuf
+      repository: file://../dbuf
+      version: 0.0.4
+    - condition: import.int-host-reporter.enabled
+      name: int-host-reporter
+      repository: file://../int-host-reporter
+      version: 0.0.4
+    - condition: import.di-topology-watchdog.enabled
+      name: di-topology-watchdog
+      repository: file://../di-topology-watchdog
+      version: 0.0.5
+    - condition: import.di-metrics-exporter.enabled
+      name: di-metrics-exporter
+      repository: file://../di-metrics-exporter
+      version: 0.0.3
+    description: A chart to deploy all SD-Fabric components
+    digest: 9b0805b7c83c4e6e89d57fe6b735e89281c01da8c8762523f36550999f0da38c
+    home: https://opennetworking.org/sd-fabric/
+    keywords:
+    - aether
+    - sdn
+    - sdfabric
+    kubeVersion: '>=1.18.0'
+    maintainers:
+    - email: sdfabric-dev@opennetworking.org
+      name: SD-Fabric Team
+    name: sdfabric
+    type: application
+    urls:
+    - docs/sdfabric-1.2.0.tgz
+    version: 1.2.0
+  subscriber-proxy:
+  - apiVersion: v2
+    appVersion: v0.3.2
+    created: "2023-03-30T15:38:55.146822661+05:30"
+    description: Subscriber-Proxy
+    digest: 3f78a2f1b23b5a6d80f7109c1c4df6943514bd7930cae17622ccdbdab00bb2c3
+    home: https://onosproject.org
+    keywords:
+    - aether
+    - config
+    kubeVersion: '>=1.17.0'
+    maintainers:
+    - email: support@opennetworking.org
+      name: Aether Ops team
+    name: subscriber-proxy
+    type: application
+    urls:
+    - docs/subscriber-proxy-0.2.1.tgz
+    version: 0.2.1
+  thingsboard-iot-platform:
+  - apiVersion: v1
+    created: "2023-03-30T15:38:55.147306178+05:30"
+    description: Thingsboard IoT Platform
+    digest: c4ef7f367cc651d1268b990156fa255f9a4178513174d4d01cdaa9fcf4f29d99
+    icon: https://guide.opencord.org/logos/cord.svg
+    name: thingsboard-iot-platform
+    urls:
+    - docs/thingsboard-iot-platform-0.1.2.tgz
+    version: 0.1.2
+  tost-telegraf:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-03-30T15:38:55.149244357+05:30"
+    dependencies:
+    - name: telegraf
+      repository: https://influxdata.github.io/helm-charts
+      version: 1.7.38
+    description: Telegraf plugin for TOST stack
+    digest: af20d4d71c61dd8219046606c723fa918621548eff0704397d5946c4d681a416
+    name: tost-telegraf
+    type: application
+    urls:
+    - docs/tost-telegraf-0.1.8.tgz
+    version: 0.1.8
+generated: "2023-03-30T15:38:55.034070592+05:30"
